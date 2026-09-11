@@ -30,6 +30,10 @@ Exit codes: **0** = all checked records valid; **1** = invalid or uncheckable re
 
 The behavior follows the [JSON Lines format](https://jsonlines.org/). Empty input contains zero records and passes format checking. This does not imply that the dataset is suitable for training: schema, content rights, personal data, duplicate records and model-specific requirements are outside this tool's scope. Duplicate JSON object keys are accepted. Extremely deep records may exceed Python's parser limit and are reported as uncheckable. Processing keeps one physical line and its parsed value in memory, so memory depends on the largest record.
 
-## Service example
+## Request a small paid adaptation
 
-A narrowly scoped paid adaptation could add a specific required-field check, a project's schema rules, or a reproducible bug fix with regression tests. Any paid work needs an agreed scope and price first. This repository is a demonstration, not a promise to solve arbitrary issues or to generate revenue.
+An introductory **US$5 fixed-price offer** is available for one agreed validation rule in this tool. For example: require each object to contain a non-empty `prompt` string. The delivery includes the patch, regression tests, running instructions, and one revision within the same agreed scope. AI assistance is used, and the relevant tests are run.
+
+Open an [issue](https://github.com/tiangongyi905-ai/jsonl-check/issues) with a synthetic example, the expected output, and your Python version. Feasibility, the exact acceptance criteria, and delivery time must be agreed before a paid task is accepted. Larger changes need a separate quote. The existing open-source tool remains free under its MIT license.
+
+Payment for an agreed adaptation can be arranged through PayPal using an appropriate private payment channel; never post payment details in an issue. This offer does not include hosting, access to production systems, or guarantees about AI training results. Do not post real datasets, passwords, API keys, personal information, or private code. Public issues are suitable only for public or synthetic examples.
